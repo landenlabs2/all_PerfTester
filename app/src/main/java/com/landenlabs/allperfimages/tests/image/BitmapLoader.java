@@ -44,6 +44,9 @@ public class BitmapLoader {
         Bitmap getBitmap(Context context,int resId);
     }
 
+    /**
+     * Load bitmap resource - no internally caching.
+     */
     public static class Loader1 implements  Loader {
 
         @Override
@@ -52,6 +55,9 @@ public class BitmapLoader {
         }
     }
 
+    /**
+     * Load bitmap resource - drawable cached internally
+     */
     public static class Loader2 implements  Loader {
 
         @Override
@@ -66,6 +72,9 @@ public class BitmapLoader {
         }
     }
 
+    /**
+     * Load bitmap resource - drawable cached internally
+     */
     public static class Loader3 implements  Loader {
 
         @Override
